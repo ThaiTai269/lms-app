@@ -1,25 +1,17 @@
 import React, {Component} from "react";
-import { useState } from 'react';
 import { Link } from "react-router-dom";
 
-export default class Login extends Component {
-    
+export default class Forgot extends Component {
+
     handleSubmit = e => {
         e.preventDefault();
-        
-        const data = {
-            email: this.email,
-            password: this.password
-        }
-        console.log(data);
-
     };
-
+    
     render() {
         return (
             <div className="form-inner">
             <form onSubmit={this.handleSubmit}>
-                <h3>Đăng nhập</h3>
+                <h3>Cấp lại mật khẩu</h3>
 
                 <div className="form-group">
                     <label>Tên đăng nhập</label>
@@ -29,16 +21,15 @@ export default class Login extends Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Mật khẩu</label>
-                    <input id="password" type='password' className="form-control"
-                    onChange={e => this.password = e.target.value}>
+                    <label>Mã xác thực</label>
+                    <input type='text' className="form-control"
+                    onChange={e => this.text = e.target.value}>
                     </input>
                 </div>
                 <p className="forgot-pw">
-                    <Link className="forgot-pw" to={'/forgot'}>Quên mật khẩu?</Link>
+                    <Link className="forgot-pw" to={'/login'}>Quay lại trang chủ</Link>
                 </p>
-                <button className="btn-login">Đăng nhập</button>
-                
+                <button className="btn-forgot">Cấp lại mật khẩu</button>
             </form>
             </div>
 
