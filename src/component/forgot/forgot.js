@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
-
+import "../login/login.css";
+import logo from "../img/Frame.png";
 export default class Forgot extends Component {
 
     handleSubmit = e => {
@@ -9,8 +10,9 @@ export default class Forgot extends Component {
     
     render() {
         return (
-            <div className="form-inner">
-            <form onSubmit={this.handleSubmit}>
+            <div className="login">
+                <img class="logo" src={logo} alt="logo"/>
+            <form className="form" onSubmit={this.handleSubmit}>
                 <h3>Cấp lại mật khẩu</h3>
 
                 <div className="form-group">
@@ -22,7 +24,7 @@ export default class Forgot extends Component {
 
                 <div className="form-group">
                     <label>Mã xác thực</label>
-                    <input type='text' className="form-control"
+                    <input id="conform" type='text' className="form-control"
                     onChange={e => this.text = e.target.value}>
                     </input>
                 </div>
