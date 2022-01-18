@@ -30,7 +30,7 @@
 .navbar-icons {
     /* align-items: center; */
     /* cursor: pointer; */
-    /* display: flex; */
+    display: block;
     height: 500px;
     /* justify-content: center; */
     margin: 0px 0px 0px 15px;
@@ -42,13 +42,23 @@
   }
 
 .icon-sidebar {
-    text-align: center;
-    width: 80px;
-    height: 80px;
+  
+    /* text-align: center; */
+    /* width: 80px;
+    height: 80px; */
     /* border-style: solid; */
     border-radius: 16px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
     
+}
+.icon-sidebar-img{
+  /* display: block; */
+  margin: auto;
+  padding: 20px;
+  border-radius: 16px;
+}
+.icon-sidebar-img:hover{
+  background-color: rgba(255,249,244,0.5);
 }
 
 .navbar-content {
@@ -64,10 +74,79 @@
     top: 0;
     transform: translateX(-100%);
     transition: all linear 0.2s;
-    width: 285px;
+   
     z-index: 50;
     
 }
 .navbar:hover .navbar-menu {
     transform: translateX(0);
   }
+
+.navbar-menu-list{
+  list-style: none;
+  margin-top: 200px;
+  padding-left: 0;
+  
+}
+.menu-title-item{
+  display: block;
+
+}
+.menu-title-list{
+  list-style: none;
+  padding-left: 0;
+}
+.img-icon_nav-list{
+  display: inline-flex;
+ 
+  margin: 0 5px;
+}
+.icon-nav{
+  margin: 0 10px 0 0;
+  transform: translateY(5px);
+}
+
+.navbar-menu-title__cost .menu-title-list{
+  display: none;
+}
+.navbar-menu-title__cost:hover .menu-title-list{
+  display: block;
+}
+.navbar-menu-title__wage .menu-title-list{
+  display: none;
+}
+.navbar-menu-title__wage:hover .menu-title-list{
+  display: block;
+}
+.navbar-menu-title{
+  margin: 20px 0;
+}
+.menu-title-item{
+  height: 48px;
+  
+}
+.menu-title-item a{
+  line-height: 48px;
+  text-decoration: none;
+  display: block;
+  padding-left: 64px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(55,56,57,0.5);
+
+}
+.menu-title-item:hover a{
+  background-color:#F0F3F6;
+  color: #373839;
+}
+.menu-title-content{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  color: rgba(55,56,57,0.7);
+  margin-left: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* nav */
