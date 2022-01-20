@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
+import logo from "../img/Frame.png";
 import "./login.css";
 export default class ForgotForm extends Component {
 
@@ -12,7 +13,7 @@ export default class ForgotForm extends Component {
     render() {
         return (
             <div className="login">
-                <img className="logo" src="./Frame.png" alt="logo"/>
+                <img className="logo" src={logo} alt="logo"/>
             <form className="form" onSubmit={this.handleSubmit}>
                 <h3>Cấp lại mật khẩu</h3>
 
