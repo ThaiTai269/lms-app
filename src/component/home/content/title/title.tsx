@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import FaChevronRight from "../img/chevron_big_right.png";
+import FaChevronRight from "../img/chevron_big_right.png"
 
 export default class Title_home extends Component{
     render(){

@@ -1,4 +1,3 @@
-
 import React, {Component} from "react";
 import user from "../img/user_circle.png"
 export default class Account extends Component{

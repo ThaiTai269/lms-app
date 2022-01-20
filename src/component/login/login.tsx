@@ -2,44 +2,38 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/Frame.png";
 import user from "../img/Union.png";
-import pass from "../img/shield-keyhole-line.png"
+import pass from "../img/shield-keyhole-line.png";
 import "./login.css";
 
 
-export default class Login extends Component {
+export const Login = () => {
 
-    handleSubmit = e => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
-
-        const data = {
-            email: this.email,
-            password: this.password
-        };
-        console.log(data);
         
-    };
+    }
 
 
 
-    render() {
+    
         return (
             <div className="login">
-                <img class="logo" src={logo} alt="logo"/>
-            <form className="form" onSubmit={this.handleSubmit}>
+                <img className="logo" src={logo} alt="logo"/>
+            <form className="form" onSubmit={handleSubmit}>
                 <h1>Đăng nhập</h1>
 
                 <div className="form-group">
-                    <label class="user-lb">Tên đăng nhập</label>
+                    <label className="user-lb">Tên đăng nhập</label>
                     <input id="email" type='email' className="form-control"
-                    onChange={e => this.email = e.target.value}>
+                    onChange={handleSubmit}>
                     
                     </input>
                 </div>
 
                 <div className="form-group">
-                    <label class="user-ps">Mật khẩu</label>
+                    <label className="user-ps">Mật khẩu</label>
                     <input id="password" type='password' className="form-control"
-                    onChange={e => this.password = e.target.value}>
+                    onChange={handleSubmit}>
                    
                     </input>
                 </div>
@@ -53,6 +47,3 @@ export default class Login extends Component {
 
         )
     }
-}
-
-

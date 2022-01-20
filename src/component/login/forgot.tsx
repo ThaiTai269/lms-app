@@ -1,17 +1,18 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
-import "../login/login.css";
-import logo from "../img/Frame.png";
-export default class Forgot extends Component {
+import "./login.css";
+export default class ForgotForm extends Component {
 
-    handleSubmit = e => {
+    handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
     };
+    email!: string;
+    text!: string;
     
     render() {
         return (
             <div className="login">
-                <img class="logo" src={logo} alt="logo"/>
+                <img className="logo" src="./Frame.png" alt="logo"/>
             <form className="form" onSubmit={this.handleSubmit}>
                 <h3>Cấp lại mật khẩu</h3>
 
@@ -24,7 +25,7 @@ export default class Forgot extends Component {
 
                 <div className="form-group">
                     <label>Mã xác thực</label>
-                    <input id="conform" type='text' className="form-control"
+                    <input type='text' className="form-control"
                     onChange={e => this.text = e.target.value}>
                     </input>
                 </div>
