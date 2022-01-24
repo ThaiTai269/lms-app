@@ -54,7 +54,9 @@
     color: #FFFFFF;
     font-size: 18px;
   }
-  
+  .btn-login:hover{
+    cursor: pointer;
+  }
   .form-group .form-control {
     background: #F2F2F2;
     border-style: none;

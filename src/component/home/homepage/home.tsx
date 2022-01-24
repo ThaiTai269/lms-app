@@ -10,7 +10,7 @@ export default class Home extends Component {
 
     render() {
         return (
-            <div className="homepg">
+            <div className="home">
                 <Sidebar />
                 <Content />
             </div>
