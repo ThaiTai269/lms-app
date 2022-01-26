@@ -183,3 +183,26 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+/* table footer */
+.table_footer_list_class{
+    margin-top: 200px;
+    display: flex;
+    line-height: 26px;
+    padding: 0 65px;
+}
+.footer_list_class__description{
+    display: flex;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer_list_class__view_page{
+    display: inline-block;
+    width: 34px;
+    height: 26px;
+    margin: 0 8px;
+    border: 1px solid #FF7506;
+    border-radius: 4px;
+    padding-left: 6px;
+    font-style: normal;
+}

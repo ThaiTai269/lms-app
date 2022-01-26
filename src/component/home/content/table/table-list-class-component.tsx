@@ -195,7 +195,15 @@ export default class Table_list_class extends Component{
                     </div>
                     
                 </div>
-                <div className="table_footer_list_class"></div>
+                <div className="table_footer_list_class">
+                        <div className="footer_list_class__description">
+                            <p>Hiển thị
+                                <span className="footer_list_class__view_page">8</span> 
+                                hàng trong mỗi trang</p>
+                            
+                           
+                        </div>
+                </div>
                 </div>
                 
             
