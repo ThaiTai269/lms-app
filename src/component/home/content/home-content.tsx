@@ -7,7 +7,9 @@ export default class Content extends Component{
     render(){
         return(
             <div className="home-content">
-                <Account />
+                <Account
+                user_name = "Đinh Thái Tài"
+                />
                 <Title_home />
                 <Table_list_class />
             </div>

@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/Frame.png";
+import FormInput from "./form_input"
+import FormPassword from "./form_password";
 import "./login.css";
 export default class ForgotForm extends Component {
 
@@ -18,17 +20,11 @@ export default class ForgotForm extends Component {
                 <h3>Cấp lại mật khẩu</h3>
 
                 <div className="form-group">
-                    <label>Tên đăng nhập</label>
-                    <input id="email" type='email' className="form-control"
-                    onChange={e => this.email = e.target.value}>
-                    </input>
+                   <FormInput nametitle = "Tên đăng nhập"/>
                 </div>
 
                 <div className="form-group">
-                    <label>Mã xác thực</label>
-                    <input type='text' className="form-control"
-                    onChange={e => this.text = e.target.value}>
-                    </input>
+                  <FormPassword nametitle = "Mã xác thực"/>
                 </div>
                 <p className="forgot-pw">
                     <Link className="forgot-pw" to={'/'}>Quay lại trang chủ</Link>

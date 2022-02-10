@@ -2,9 +2,78 @@ import { Component, ReactNode } from "react";
 import caret_down from "../img/caret_down.png";
 import "./table-list-class.css";
 import icon_button from "../img/icon button.png";
+import DropDown_item from "./dropdown_item";
+import Table_content from "./table_content";
 
 export default class Table_list_class extends Component{
+    
+
     render() {
+        // const Class = [
+        //     {
+        //         STT: "1",
+        //         ClassID: "19 123 03A",
+        //         ClassName: "KT19A",
+        //         Quantily: "1",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "2",
+        //         ClassID: "19 123 03B",
+        //         ClassName: "KT19B",
+        //         Quantily: "2",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "3",
+        //         ClassID: "19 123 03A",
+        //         ClassName: "KT19A",
+        //         Quantily: "1",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "4",
+        //         ClassID: "19 123 03B",
+        //         ClassName: "KT19B",
+        //         Quantily: "2",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "5",
+        //         ClassID: "19 123 03A",
+        //         ClassName: "KT19A",
+        //         Quantily: "1",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "6",
+        //         ClassID: "19 123 03B",
+        //         ClassName: "KT19B",
+        //         Quantily: "2",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "7",
+        //         ClassID: "19 123 03A",
+        //         ClassName: "KT19A",
+        //         Quantily: "1",
+        //         Date: "01/07/2021"
+        //     },
+
+        //     {
+        //         STT: "8",
+        //         ClassID: "19 123 03B",
+        //         ClassName: "KT19B",
+        //         Quantily: "2",
+        //         Date: "01/07/2021"
+        //     }
+        // ] 
         return(
             <div className="table_content">
                 <div className="table_content_content">
@@ -17,12 +86,12 @@ export default class Table_list_class extends Component{
                         <img src={caret_down} className="select_icon_img"/>
                         <div className="from_select_list">
                             <ul className="select_list">
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Theo tín chỉ</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Theo tháng</a> 
-                                </li>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Theo tín chỉ"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Theo tháng"/>
                             </ul>
                         </div>
                     </div>
@@ -35,15 +104,15 @@ export default class Table_list_class extends Component{
                         <img src={caret_down} className="select_icon_img"/>
                         <div className="from_select_list">
                             <ul className="select_list">
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">2020 - 2021</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">2019 - 2020</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">2018 - 2019</a> 
-                                </li>
+                            <DropDown_item
+                                DP_link = "#" 
+                                DP_item_name="2020 - 2021"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="2019 - 2020"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="2018 - 2019"/>
                             </ul>
                         </div>
                     </div>
@@ -56,24 +125,24 @@ export default class Table_list_class extends Component{
                         <img src={caret_down} className="select_icon_img"/>
                         <div className="from_select_list">
                             <ul className="select_list">
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Quản trị kinh doanh</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Kế toán - kiểm toán</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Tài chính ngân hàng</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Kinh tế đối ngoại</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Hệ thống thông tin</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Tất cả</a> 
-                                </li>
+                            <DropDown_item
+                                DP_link = "#" 
+                                DP_item_name="Quản trị kinh doanh"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Kế toán - Kiểm toán"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Tài chính ngân hàng"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Kinh tế đối ngoại"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Hệ thống thông tin"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Tất cả"/>
                             </ul>
                         </div>
                     </div>
@@ -86,15 +155,15 @@ export default class Table_list_class extends Component{
                         <img src={caret_down} className="select_icon_img"/>
                         <div className="from_select_list">
                             <ul className="select_list">
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Kiểm toán</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Kế toán</a> 
-                                </li>
-                                <li className="select_item">
-                                   <a href="#" className="select_item_link">Tất cả</a> 
-                                </li>
+                                <DropDown_item
+                                DP_link = "#" 
+                                DP_item_name="Kiểm toán"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Kế toán"/>
+                            <DropDown_item 
+                                DP_link = "#"
+                                DP_item_name="Tất cả"/>
                             </ul>
                         </div>
                     </div>
@@ -117,79 +186,85 @@ export default class Table_list_class extends Component{
                         <p className="content_list_class__heading_item">Tên lớp</p>
                         <p className="content_list_class__heading_item">Số lượng biểu phí</p>
                         <p className="content_list_class__heading_item">Ngày cập nhật</p>
-                    </div>
+                </div>
                     <div className="content_list_class">
+                    <div className="content_list_class__content">
+                        <Table_content 
+                            STT = "1"
+                            ClassID = "19 123 03A"
+                            ClassName = "KT19A"
+                            Quantily = "1"
+                            Date = "01/07/2021"
+                        />
+                    </div>
                    
-                    <div className="content_list_class__content">
-                        <p className="content_list_class__content_item__id_class">1</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03A</p>
-                        <p className="content_list_class__content_item__name_class">KT_19A</p>
-                        <p className="content_list_class__content_item__quanity_class">1</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
-
-                    </div>
+                   
                     <div className="content_list_class__content bg_light_grey">
-                        <p className="content_list_class__content_item__id_class">2</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03B</p>
-                        <p className="content_list_class__content_item__name_class">KT_19B</p>
-                        <p className="content_list_class__content_item__quanity_class">2</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
-
+                        <Table_content
+                            STT = "2"
+                            ClassID = "19 123 03B"
+                            ClassName = "KT19B"
+                            Quantily = "2"
+                            Date = "01/07/2021"
+                        />
                     </div>
                     <div className="content_list_class__content">
-                        <p className="content_list_class__content_item__id_class">3</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03A</p>
-                        <p className="content_list_class__content_item__name_class">KT_19A</p>
-                        <p className="content_list_class__content_item__quanity_class">1</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
-
+                        <Table_content 
+                            STT = "3"
+                            ClassID = "19 123 03A"
+                            ClassName = "KT19A"
+                            Quantily = "1"
+                            Date = "01/07/2021"
+                        />
                     </div>
                     <div className="content_list_class__content bg_light_grey">
-                        <p className="content_list_class__content_item__id_class">4</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03B</p>
-                        <p className="content_list_class__content_item__name_class">KT_19B</p>
-                        <p className="content_list_class__content_item__quanity_class">2</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
+                         <Table_content
+                            STT = "4"
+                            ClassID = "19 123 03B"
+                            ClassName = "KT19B"
+                            Quantily = "2"
+                            Date = "01/07/2021"
+                            />
 
                     </div>
                     <div className="content_list_class__content">
-                        <p className="content_list_class__content_item__id_class">5</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03A</p>
-                        <p className="content_list_class__content_item__name_class">KT_19A</p>
-                        <p className="content_list_class__content_item__quanity_class">1</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
+                        <Table_content 
+                            STT = "5"
+                            ClassID = "19 123 03A"
+                            ClassName = "KT19A"
+                            Quantily = "1"
+                            Date = "01/07/2021"
+                        />
 
                     </div>
                     <div className="content_list_class__content bg_light_grey">
-                        <p className="content_list_class__content_item__id_class">6</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03B</p>
-                        <p className="content_list_class__content_item__name_class">KT_19B</p>
-                        <p className="content_list_class__content_item__quanity_class">2</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
+                         <Table_content
+                            STT = "6"
+                            ClassID = "19 123 03B"
+                            ClassName = "KT19B"
+                            Quantily = "2"
+                            Date = "01/07/2021"
+                            />
+
 
                     </div>
                     <div className="content_list_class__content">
-                        <p className="content_list_class__content_item__id_class">1</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03A</p>
-                        <p className="content_list_class__content_item__name_class">KT_19A</p>
-                        <p className="content_list_class__content_item__quanity_class">1</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
-
+                        <Table_content 
+                            STT = "7"
+                            ClassID = "19 123 03A"
+                            ClassName = "KT19A"
+                            Quantily = "1"
+                            Date = "01/07/2021"
+                        />
                     </div>
                     <div className="content_list_class__content bg_light_grey">
-                        <p className="content_list_class__content_item__id_class">8</p>
-                        <p className="content_list_class__content_item__code_class">19 123 03B</p>
-                        <p className="content_list_class__content_item__name_class">KT_19B</p>
-                        <p className="content_list_class__content_item__quanity_class">2</p>
-                        <p className="content_list_class__content_item__update_class">01/07/2021</p>
-                        <img src={icon_button} className="content_list_class__content_item__icon_class"/>
+                         <Table_content
+                            STT = "8"
+                            ClassID = "19 123 03B"
+                            ClassName = "KT19B"
+                            Quantily = "2"
+                            Date = "01/07/2021"
+                            />
 
                     </div>
                     </div>

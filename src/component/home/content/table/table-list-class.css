@@ -1,4 +1,7 @@
-
+.ListClass_item {
+    width: 100%;
+    display: flex;
+}
 
 /* table_heading */
 .table_heading_nav{

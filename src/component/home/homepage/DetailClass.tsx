@@ -1,9 +1,9 @@
-
 import React, { Component } from "react";
 import "./home.css";
+import "../content/table/detail_class.css"
 import Sidebar from "../sidebar/sidebar";
-import Content from "../content/home-content"
-import { Routes, Route } from "react-router-dom";
+import Detail_Class from "../content/home-detail";
+
 
 
 export default class Home extends Component {
@@ -13,8 +13,7 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <Sidebar />
-                <Content />
-                
+                <Detail_Class/>
             </div>
         )
     }
