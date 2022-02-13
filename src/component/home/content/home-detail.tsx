@@ -6,10 +6,12 @@ import TitleBack from "./title/title_back";
 import TitleTarget from "./title/title_target";
 import FaChevronRight from "./img/chevron_big_right.png"
 
+
 export default class Detail_Class extends Component{
     render(){
         return(
-            <div className="home-content">
+            
+                <div className="home-content">
                 <Account
                 user_name = "Đinh Thái Tài"
                 />
@@ -22,7 +24,11 @@ export default class Detail_Class extends Component{
                 </div>
                
                 <Table_detail_class/>
+               
             </div>
+           
+            
+            
         )
     }
 }

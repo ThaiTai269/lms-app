@@ -103,6 +103,9 @@
     align-items: center;
     justify-content: center;
 }
+/* .button_add_tariff:focus .modal_detail{
+    display: block;
+} */
 .icon_add_tariff{
     margin-right: 13px;
     width: 21px;

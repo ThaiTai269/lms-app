@@ -3,9 +3,14 @@ import Detail_class from "./detail_class";
 import { Link } from "react-router-dom";
 import add from "../img/fi_plus.png";
 import Tariff_content from "./table_detail_content";
+import Popup from "reactjs-popup";
+import {useState} from "react";
+import Modal_detail from "../modal/modal_detail/modal_add_detail";
+
 
 
 function Table_detail_class(){
+   const [isOpen, setIsOpen] = useState(false);
     return(
         
             <div className="table_content">
@@ -58,10 +63,12 @@ function Table_detail_class(){
                         <p className="list_tariff_name">
                            Danh sách biểu phí
                         </p>
-                        <button className="button_add_tariff">
+                        <button className="button_add_tariff" onClick={() => setIsOpen(true)}  >
                            <img src={add} alt="" className="icon_add_tariff"/>
                            Thêm biểu phí
-                        </button>
+                           </button>
+                        
+                        
                     </div>
 
                     <div className="table_tariff">
@@ -96,6 +103,9 @@ function Table_detail_class(){
                         </div>
                     </div>
                 </div>
+              
+                
+                {isOpen && <Modal_detail setIsOpen={setIsOpen} />}
             </div>
         
         
