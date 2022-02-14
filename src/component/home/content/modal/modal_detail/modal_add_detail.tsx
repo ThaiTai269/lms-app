@@ -18,7 +18,7 @@ const Modal_detail = ({ setIsOpen } : {setIsOpen : any}) => {
            
             </div>
             <div className="modal_body">
-                 <div className="modal_content">
+                 <div className="modal_content" >
                     <h1 className="modal_detail-heading">Thêm biểu phí</h1>
                     <div className="modal_detail-table">
                         <div className="detail-table-heading">
@@ -86,15 +86,23 @@ const Modal_detail = ({ setIsOpen } : {setIsOpen : any}) => {
                              
                          </div>
 
-                         <div className="modal_date">
-                                <Detail_date
+                         <div className="modal_date" >
+                                <div className="modal_date_start">
+                                    
+                                    <Detail_date
                                     status_date = "Ngày bắt đầu:"
                                     date_target = "02/12/2022"
-                                />
+                                    />
+                                   
+                                
+                                </div>
+                                <div className="modal_date_end">
                                 <Detail_date
                                     status_date = "Ngày kết thúc:"
                                     date_target = "02/12/2022"
                                 />
+                                </div>
+                                
                          </div>
                          <div className="modal_detail_button">
                              <button className="button_detail_close" onClick={() => setIsOpen(false)}>Hủy</button>
