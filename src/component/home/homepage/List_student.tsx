@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "./home.css";
+
 import "../content/table/css/detail_class.css"
 import Sidebar from "../sidebar/sidebar";
-import Detail_Class from "../content/home-detail";
-import Modal_detail from "../content/modal/modal_detail/modal_add_detail";
+import List_student_content from "../content/home-list_student";
 
 
-
-export default class Detail_class extends Component {
+export default class List_student extends Component {
 
 
     render() {
@@ -15,7 +14,7 @@ export default class Detail_class extends Component {
             <div className="home_detail">
                 <div className="home">
                 <Sidebar />
-                <Detail_Class/>
+                <List_student_content/>
                
                 </div>
                

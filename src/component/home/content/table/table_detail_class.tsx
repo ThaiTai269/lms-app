@@ -50,7 +50,7 @@ function Table_detail_class(){
                     
                     </div>
                     
-                    <Link className="list_student" to={'/'}> 
+                    <Link className="list_student" to={'/liststudent'}> 
                        <button className="button__list-student">Danh sách học viên</button>
                     </Link>
 

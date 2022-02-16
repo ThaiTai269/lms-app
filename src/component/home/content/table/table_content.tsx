@@ -75,7 +75,7 @@ function Table_content(des:any){
              <p className="content_list_class__content_item__name_class">{des.ClassName}</p>
              <p className="content_list_class__content_item__quanity_class">{des.Quantily}</p>
              <p className="content_list_class__content_item__update_class">{des.Date}</p>
-             <Link className="homepg" to={'/detail'}> 
+             <Link className="homepg" to={'/detailclass'}> 
              <a href=""> <img src={icon_button} className="content_list_class__content_item__icon_class"/>
             </a>
             </Link>
