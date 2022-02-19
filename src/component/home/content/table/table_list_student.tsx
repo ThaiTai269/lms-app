@@ -7,6 +7,7 @@ import info_student from "./img/infor student.png";
 import { Liststudent } from "../../data/listStudent";
 import Number_on_page from "./number_on_table";
 import Number_page from "./number_page";
+import { Link } from "react-router-dom";
 
 
 function Table_list_student (){
@@ -86,10 +87,12 @@ function Table_list_student (){
                                         } 
                                         
                                     </span>
-                                    
+                                    <Link className="student--content_item--link_link" to={'/studentprofile'}>
                                     <a href="" className="student--content_item--link">
                                         <img src={info_student} alt="" className="student--content_item--icon" />
                                     </a>
+                                    </Link>
+                                    
 
                                 </li>
                             )
