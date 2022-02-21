@@ -156,3 +156,7 @@
 .item_content_summary_item--detail{
     width: 271px;
 }
+.item_content_summary_item--link{
+    border: none;
+    cursor: pointer;
+}

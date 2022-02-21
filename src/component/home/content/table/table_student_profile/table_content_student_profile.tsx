@@ -1,10 +1,12 @@
 import React from "react";
 import {Studentprofile} from "../../../data/data_student_profile";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import see from "../img/xem cac khoan da dong.png"
-
+import Modal_receivables from "../../modal/modal_receivables/modal_receivables";
 
 function Table_content_student_profile () {
+    const [isOpen_modal_reaceivables, setIsOpen_modal_reaceivables] = useState(false);
+
     return(
         <div className="summary_sheet_name_detail">
             <div className="summary_sheet_name_detail_heading">
@@ -45,11 +47,11 @@ function Table_content_student_profile () {
                                         {student.revenue_unit }
                                     </span>
                                    
-                                    <Link className="item_content_summary_item--link_link" to={'/studentprofile'}>
-                                    <a href="" className="item_content_summary_item--link">
+                                   
+                                    <a className="item_content_summary_item--link" onClick={() => setIsOpen_modal_reaceivables(true)}>
                                         <img src={see} alt="" className="item_content_summary_item--icon" />
                                     </a>
-                                    </Link>
+                                    
                                     
 
                                 </li>
@@ -57,6 +59,7 @@ function Table_content_student_profile () {
                         })}
                 </ul>
             </div>
+            {isOpen_modal_reaceivables && <Modal_receivables setIsOpen_modal_reaceivables={setIsOpen_modal_reaceivables} />}
         </div>
     )
 }
