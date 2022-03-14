@@ -52,7 +52,7 @@
   }
   
   .btn-login {
-    width: 452px;
+    width: 462px;
     height: 52px;
     display: flex;
     flex-direction: column;
@@ -140,6 +140,7 @@
       text-decoration: none;
       display: flex;
       align-items: center;
+      width: 471px;
   }
   .user-lb{
     display: block;
