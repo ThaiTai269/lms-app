@@ -1,3 +1,4 @@
+
 .bg_grey{
     background: #F0F3F6;
 }
@@ -17,7 +18,7 @@
     width: 950px;
     justify-content: space-between;
     align-items: center;
-   
+    font-family: 'Source Sans Pro';
 }
 .form__detail{
     display: flex;
@@ -127,7 +128,7 @@
     align-items: center;
     justify-content: space-between;
     border-radius: 4px 4px 0px 0px;
-    
+    font-family: 'Mulish';
 }
 .tariff_heading_info{
     

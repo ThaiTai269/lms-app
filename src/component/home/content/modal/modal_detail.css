@@ -38,19 +38,21 @@
 /* modal content */
 .modal_content{
     padding: 0 64px;
+    font-family: 'Source Sans Pro';
 }
 .modal_detail-heading{
+    font-family: 'Mulish';
     text-align: center;
 }
 .detail-table-heading{
     display: flex;
     align-items: center;
-    
+    font-family: 'Mulish';
     height: 40px;
     background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
     border-radius: 8px 8px 0px 0px;
     padding-left: 50px;
-    padding-right: 100px;
+    padding-right: 96px;
 }
 .detail_checkbox{
     display: block;
@@ -116,7 +118,7 @@
     color: #373839;
 }
 .content-name-detail{
-    width: 216px;
+    width: 220px;
     margin-right: 112px;
     
 }
@@ -124,6 +126,7 @@
     color: #373839;
     font-size: 18px;
     font-weight: 400;
+    
 }
 .detail_content-code{
     color: #373839;

@@ -36,6 +36,7 @@
     position: relative;
     font-size: 16px;
     font-weight: 400;
+    font-family: 'Source Sans Pro';
 }
 .select_name{
     line-height: 32px;
@@ -126,7 +127,7 @@
 .content_list_class__heading_item{
     display: inline-flex;
     line-height: 40px;
-    margin: 0 100px 0 0;
+    margin: 0 143px 0 0;
     justify-content: flex-start;
     color: #fff;
     font-size: 18px;
@@ -143,48 +144,38 @@
     background: #F0F3F6 ;
 }
 .content_list_class__content_item__id_class{
-    position: absolute;
-    left: 45px;
-    display: block;
     
+    padding-left: 10px;
+    display: block;
+    width: 160px;
 }
 .content_list_class__content_item__code_class{
-    position: absolute;
-    left: 169px;
     display: block;
-    width: 81px;
+    width: 198px;
     
 }
 .content_list_class__content_item__name_class{
-    position: absolute;
-    left: 330px;
     display: block;
-    width: 61px;
+    width: 255px;
     
 }
 .content_list_class__content_item__quanity_class{
-    position: absolute;
-    left: 487px;
     display: block;
-    width: 150px;
-    text-align: center;
-    
+    width: 214px;
 }
 .content_list_class__content_item__update_class{
-    position: absolute;
-    left: 732px;
-    
+    width: 325px;
 }
 .content_list_class__content_item__icon_class{
-    position: absolute;
-    left: 1152px;
-    top: 12px;
+    display: flex;
+    align-items: center;
     width: 32px;
     
 }
 .content_list_class{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    font-family: 'Source Sans Pro';
 }
 /* table footer */
 .table_footer_list_class{
@@ -192,12 +183,14 @@
     display: flex;
     line-height: 26px;
     padding: 0 65px;
+    justify-content: space-between;
 }
 .footer_list_class__description{
     display: flex;
     font-style: italic;
     font-size: 16px;
     font-weight: 400;
+    align-items: center;
 }
 .footer_list_class__view_page{
     display: inline-block;
@@ -208,4 +201,9 @@
     border-radius: 4px;
     padding-left: 6px;
     font-style: normal;
+}
+
+.number_page {
+    display: flex;
+    
 }

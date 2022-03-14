@@ -9,6 +9,7 @@
 .navbar {
     display: contents;
 }
+
 .navbar-content {
     background: linear-gradient(359.43deg, #ff5400 2.1%, #f17f21 98.52%);
     box-shadow: 4px 4px 15px rgba(122, 176, 225, 0.25);
@@ -92,7 +93,11 @@
 }
 .menu-title-item{
   display: block;
-
+  font-family: 'Source Sans Pro';
+  color: #373839;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 400;
 }
 .menu-title-list{
   list-style: none;
@@ -144,14 +149,17 @@
   color: #373839;
 }
 .menu-title-content{
+  font-family: 'Mulish';
   font-size: 18px;
   text-decoration: none;
-  font-weight: 700;
-  color: rgba(55,56,57,0.7);
+  color: #373839;
+  opacity: 0.7;
   margin-left: 30px;
   display: block;
   margin-bottom: 10px;
   padding-right: 10px;
+  
+
 }
 /* content */
 .home-content{
@@ -207,6 +215,7 @@
   color: #C9C4C0;
   display: inline-flex;
   align-items: center;
+  font-family: Mulish;
 }
 .title_home-icon{
   width: 21px;
@@ -220,6 +229,7 @@
   font-size: 48px;
   color: #373839;
   display: inline-block;
+  font-family: Mulish;
 }
 /* home content */
 .table_content{
@@ -228,8 +238,10 @@
   background-color: #fff;
   box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
   border-radius: 16px;
+  font-family: 'Source Sans Pro';
 }
 .table_content_content{
   padding: 24px 65px;
+  font-family: 'Source Sans Pro';
 }
 

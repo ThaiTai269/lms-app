@@ -4,6 +4,9 @@ import "../css/table-list-class.css";
 import icon_button from "../img/icon button.png";
 import DropDown_item from "./dropdown_item";
 import Table_content from "./table_content";
+import Number_on_page from "../component_table/number_on_table";
+import unionleft from "../img/Unionleft.png"
+import unionright from "../img/Unionright.png"
 
 export default class Table_list_class extends Component{
     
@@ -158,10 +161,10 @@ export default class Table_list_class extends Component{
                                 <DropDown_item
                                 DP_link = "#" 
                                 DP_item_name="Kiểm toán"/>
-                            <DropDown_item 
+                                <DropDown_item 
                                 DP_link = "#"
                                 DP_item_name="Kế toán"/>
-                            <DropDown_item 
+                                <DropDown_item 
                                 DP_link = "#"
                                 DP_item_name="Tất cả"/>
                             </ul>
@@ -272,12 +275,21 @@ export default class Table_list_class extends Component{
                 </div>
                 <div className="table_footer_list_class">
                         <div className="footer_list_class__description">
-                            <p>Hiển thị
-                                <span className="footer_list_class__view_page">8</span> 
-                                hàng trong mỗi trang</p>
-                            
+                            <Number_on_page
+                                number = "8"
+                            />
                            
                         </div>
+                        <div className="number_page">
+                                <img src={unionleft} alt="" className="number_page_icon"/>
+                                <p className="number_page_on">1</p>
+                                <p className="number_page_on">2</p>
+                                <p className="number_page_on">3</p>
+                                <p className="number_page_on">...</p>
+                                <p className="number_page_on">100</p>
+                                <img src={unionright} alt="" className="number_page_icon"/>
+                            </div>
+                        
                 </div>
                 </div>
                 

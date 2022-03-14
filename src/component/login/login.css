@@ -7,16 +7,23 @@
     font-family: Mulish;
     text-align: center;
   } */
-  
+  /* *{
+    font-family: 'Source Sans Pro', sans-serif;
+  } */
   .form h1 {
     text-align: center;
     margin-bottom: 80px;
     font-size: 48px ;
+    color: #373839;
+    font-family: Mulish;
+    font-weight: 800;
+    font-style: normal;
   }
   .form h3{
     text-align: center;
     margin-bottom: 80px;
     font-size: 48px ;
+    width: 460px;
   }
   .login {
     width: 1920px;
@@ -116,7 +123,7 @@
     background-position: left;
     background-position-x: 5px;
     border-radius: 8px;
-    padding-left: 30px;
+    padding-left: 40px;
     
   }
   
@@ -126,15 +133,20 @@
     background-position: left;
     background-position-x: 10px;
     border-radius: 8px;
-    padding-left: 30px;
+    padding-left: 40px;
   }
 
   .homepg {
       text-decoration: none;
+      display: flex;
+      align-items: center;
   }
   .user-lb{
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    color: #373839;
+    font-weight: 600;
+    
   }
   .user-ps{
     display: block;
